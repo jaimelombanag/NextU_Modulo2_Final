@@ -10,4 +10,7 @@ import UIKit
 
 class KybosCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var imgKybos: UIImageView!
+    
 }

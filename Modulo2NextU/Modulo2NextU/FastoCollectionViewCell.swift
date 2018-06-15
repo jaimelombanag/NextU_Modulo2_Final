@@ -10,4 +10,7 @@ import UIKit
 
 class FastoCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var imgFasto: UIImageView!
+    
+    
 }

@@ -8,28 +8,43 @@
 
 import UIKit
 
-class KybosViewController: UIViewController {
-
+class KybosViewController: UIViewController,  UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    
+    
+    @IBOutlet weak var titleKybos: UILabel!
+    var imageArray = [UIImage(named: "kybos1"), UIImage(named: "kybos2"), UIImage(named: "kybos3"), UIImage(named: "kybos4")]
+    @IBOutlet weak var descriptionMontana: UITextView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        titleKybos.text = "Kybos"
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return imageArray.count
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KybosCollectionViewCell", for: indexPath) as! KybosCollectionViewCell
+        
+        cell.imgKybos.image = imageArray[indexPath.row]
+        
+        return cell
+    }
+    
+    
+    
 }

@@ -10,4 +10,7 @@ import UIKit
 
 class MontanaCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var imgMontana: UIImageView!
+    
 }

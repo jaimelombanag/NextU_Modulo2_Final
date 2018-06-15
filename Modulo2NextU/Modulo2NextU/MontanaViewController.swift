@@ -8,28 +8,43 @@
 
 import UIKit
 
-class MontanaViewController: UIViewController {
-
+class MontanaViewController: UIViewController,  UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    
+    
+    @IBOutlet weak var titleMontana: UILabel!
+    var imageArray = [UIImage(named: "montana1"), UIImage(named: "montana2"), UIImage(named: "montana3"), UIImage(named: "montana4")]
+    @IBOutlet weak var descriptionMontana: UITextView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        titleMontana.text = "Montana"
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return imageArray.count
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MontanaCollectionViewCell", for: indexPath) as! MontanaCollectionViewCell
+        
+        cell.imgMontana.image = imageArray[indexPath.row]
+        
+        return cell
+    }
+    
+    
+    
 }

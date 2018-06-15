@@ -12,6 +12,12 @@
 		AF628CE520CC1D1900198E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF628CE320CC1D1900198E6A /* Main.storyboard */; };
 		AF628CE720CC1D1900198E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF628CE620CC1D1900198E6A /* Assets.xcassets */; };
 		AF628CEA20CC1D1900198E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF628CE820CC1D1900198E6A /* LaunchScreen.storyboard */; };
+		AF628CF420D342CD00198E6A /* FastoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF628CF320D342CD00198E6A /* FastoViewController.swift */; };
+		AF628CF620D342E000198E6A /* MontanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF628CF520D342E000198E6A /* MontanaViewController.swift */; };
+		AF628CF820D3432100198E6A /* KybosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF628CF720D3432100198E6A /* KybosViewController.swift */; };
+		AF628CFA20D3437600198E6A /* FastoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF628CF920D3437600198E6A /* FastoCollectionViewCell.swift */; };
+		AF628CFC20D3438B00198E6A /* MontanaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF628CFB20D3438B00198E6A /* MontanaCollectionViewCell.swift */; };
+		AF628CFE20D3439D00198E6A /* KybosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF628CFD20D3439D00198E6A /* KybosCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		AF628CE620CC1D1900198E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF628CE920CC1D1900198E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF628CEB20CC1D1900198E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF628CF320D342CD00198E6A /* FastoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastoViewController.swift; sourceTree = "<group>"; };
+		AF628CF520D342E000198E6A /* MontanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MontanaViewController.swift; sourceTree = "<group>"; };
+		AF628CF720D3432100198E6A /* KybosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KybosViewController.swift; sourceTree = "<group>"; };
+		AF628CF920D3437600198E6A /* FastoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastoCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF628CFB20D3438B00198E6A /* MontanaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MontanaCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF628CFD20D3439D00198E6A /* KybosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KybosCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 		AF628CDE20CC1D1900198E6A /* Modulo2NextU */ = {
 			isa = PBXGroup;
 			children = (
+				AF628CF220D3429300198E6A /* VehiculosViewController */,
+				AF628CF120D3407500198E6A /* VehiculosCell */,
 				AF628CDF20CC1D1900198E6A /* AppDelegate.swift */,
 				AF628CE120CC1D1900198E6A /* ViewController.swift */,
 				AF628CE320CC1D1900198E6A /* Main.storyboard */,
@@ -62,6 +76,26 @@
 				AF628CEB20CC1D1900198E6A /* Info.plist */,
 			);
 			path = Modulo2NextU;
+			sourceTree = "<group>";
+		};
+		AF628CF120D3407500198E6A /* VehiculosCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF628CF920D3437600198E6A /* FastoCollectionViewCell.swift */,
+				AF628CFB20D3438B00198E6A /* MontanaCollectionViewCell.swift */,
+				AF628CFD20D3439D00198E6A /* KybosCollectionViewCell.swift */,
+			);
+			name = VehiculosCell;
+			sourceTree = "<group>";
+		};
+		AF628CF220D3429300198E6A /* VehiculosViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF628CF320D342CD00198E6A /* FastoViewController.swift */,
+				AF628CF520D342E000198E6A /* MontanaViewController.swift */,
+				AF628CF720D3432100198E6A /* KybosViewController.swift */,
+			);
+			name = VehiculosViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF628CF820D3432100198E6A /* KybosViewController.swift in Sources */,
 				AF628CE220CC1D1900198E6A /* ViewController.swift in Sources */,
+				AF628CFA20D3437600198E6A /* FastoCollectionViewCell.swift in Sources */,
+				AF628CF420D342CD00198E6A /* FastoViewController.swift in Sources */,
 				AF628CE020CC1D1900198E6A /* AppDelegate.swift in Sources */,
+				AF628CF620D342E000198E6A /* MontanaViewController.swift in Sources */,
+				AF628CFC20D3438B00198E6A /* MontanaCollectionViewCell.swift in Sources */,
+				AF628CFE20D3439D00198E6A /* KybosCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +344,7 @@
 				AF628CF020CC1D1900198E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

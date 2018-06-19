@@ -78,7 +78,7 @@
                                                             </mask>
                                                         </variation>
                                                         <connections>
-                                                            <segue destination="J4A-PK-br0" kind="show" id="bvN-jk-EnG"/>
+                                                            <segue destination="J4A-PK-br0" kind="show" identifier="fastoCar" id="bvN-jk-EnG"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fasto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyL-D7-6kx">
@@ -210,7 +210,7 @@
                                                             </mask>
                                                         </variation>
                                                         <connections>
-                                                            <segue destination="n3e-WA-U3i" kind="show" id="YF8-BR-Afg"/>
+                                                            <segue destination="n3e-WA-U3i" kind="show" identifier="kybosCar" id="YF8-BR-Afg"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kybos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU7-ik-gPb">
@@ -342,7 +342,7 @@
                                                             </mask>
                                                         </variation>
                                                         <connections>
-                                                            <segue destination="61F-No-n3e" kind="show" id="v5n-pD-glv"/>
+                                                            <segue destination="61F-No-n3e" kind="show" identifier="montanaCar" id="v5n-pD-glv"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Montana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnU-bc-1zn">
@@ -534,11 +534,6 @@
                     <navigationItem key="navigationItem" title="Mis Vehículos" id="gIl-HJ-eKG"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="750"/>
-                    <connections>
-                        <segue destination="n3e-WA-U3i" kind="show" id="FHc-8z-dge"/>
-                        <segue destination="J4A-PK-br0" kind="show" id="7hT-Aq-lRO"/>
-                        <segue destination="61F-No-n3e" kind="show" id="abt-pr-K66"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Kg-5t-OhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -606,7 +601,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MontanaCollectionViewCell" id="qaU-mH-ORT" customClass="MontanaCollectionViewCell" customModule="Modulo2NextU" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="16" width="176" height="169"/>
+                                        <rect key="frame" x="0.0" y="15.5" width="176" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="176" height="169"/>
@@ -779,7 +774,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nt9-Hi-Vfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="1913.6718749999998"/>
+            <point key="canvasLocation" x="-174" y="872"/>
         </scene>
         <!--Kybos-->
         <scene sceneID="cKq-X3-ZFB">
@@ -836,7 +831,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KybosCollectionViewCell" id="N7b-5D-w0q" customClass="KybosCollectionViewCell" customModule="Modulo2NextU" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="16" width="176" height="169"/>
+                                        <rect key="frame" x="0.0" y="15.5" width="176" height="169"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="176" height="169"/>
@@ -1016,7 +1011,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cV-67-uTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698" y="56"/>
+            <point key="canvasLocation" x="726" y="76"/>
         </scene>
         <!--Fasto-->
         <scene sceneID="coA-XY-dzF">
@@ -1066,14 +1061,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FastoCollectionViewCell" id="Zpz-h8-m5h" customClass="FastoCollectionViewCell" customModule="Modulo2NextU" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="18" width="157" height="165"/>
+                                        <rect key="frame" x="0.0" y="18" width="157" height="164.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="157" height="165"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="157" height="164.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7EM-od-bnG">
-                                                    <rect key="frame" x="8" y="8" width="150" height="150"/>
+                                                    <rect key="frame" x="8" y="8" width="150" height="148"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="150" id="5oF-X9-ziD"/>
                                                         <constraint firstAttribute="width" constant="150" id="pSI-lO-9lH"/>
@@ -1191,15 +1186,15 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Qbb-m9-p6X"/>
+                                <exclude reference="TEb-jy-slR"/>
+                                <exclude reference="Ww8-qL-Rtz"/>
                                 <exclude reference="3iY-82-a2E"/>
                                 <exclude reference="MJN-6N-xcS"/>
                                 <exclude reference="XUD-2i-NgQ"/>
                                 <exclude reference="duw-UK-9uJ"/>
                                 <exclude reference="w73-co-y8G"/>
                                 <exclude reference="w8x-D3-Pyc"/>
-                                <exclude reference="Qbb-m9-p6X"/>
-                                <exclude reference="TEb-jy-slR"/>
-                                <exclude reference="Ww8-qL-Rtz"/>
                                 <exclude reference="MHB-om-138"/>
                                 <exclude reference="O8E-3M-bU2"/>
                                 <exclude reference="QBS-u2-DaB"/>
@@ -1223,12 +1218,12 @@
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
-                                <include reference="3iY-82-a2E"/>
-                                <include reference="w73-co-y8G"/>
-                                <include reference="w8x-D3-Pyc"/>
                                 <include reference="Qbb-m9-p6X"/>
                                 <include reference="TEb-jy-slR"/>
                                 <include reference="Ww8-qL-Rtz"/>
+                                <include reference="3iY-82-a2E"/>
+                                <include reference="w73-co-y8G"/>
+                                <include reference="w8x-D3-Pyc"/>
                                 <include reference="MHB-om-138"/>
                                 <include reference="xpM-v9-wWW"/>
                                 <include reference="yVv-Po-91F"/>
@@ -1243,7 +1238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGR-sS-9nM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="-1794"/>
+            <point key="canvasLocation" x="-174" y="-717"/>
         </scene>
     </scenes>
     <resources>
@@ -1251,9 +1246,4 @@
         <image name="kybos" width="150" height="150"/>
         <image name="montana" width="150" height="150"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="bvN-jk-EnG"/>
-        <segue reference="YF8-BR-Afg"/>
-        <segue reference="v5n-pD-glv"/>
-    </inferredMetricsTieBreakers>
 </document>

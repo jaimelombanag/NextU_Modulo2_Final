@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AF628CE020CC1D1900198E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF628CDF20CC1D1900198E6A /* AppDelegate.swift */; };
-		AF628CE220CC1D1900198E6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF628CE120CC1D1900198E6A /* ViewController.swift */; };
 		AF628CE520CC1D1900198E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF628CE320CC1D1900198E6A /* Main.storyboard */; };
 		AF628CE720CC1D1900198E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF628CE620CC1D1900198E6A /* Assets.xcassets */; };
 		AF628CEA20CC1D1900198E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF628CE820CC1D1900198E6A /* LaunchScreen.storyboard */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		AF628CDC20CC1D1900198E6A /* Modulo2NextU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modulo2NextU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF628CDF20CC1D1900198E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF628CE120CC1D1900198E6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF628CE420CC1D1900198E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF628CE620CC1D1900198E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF628CE920CC1D1900198E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				AF628CF220D3429300198E6A /* VehiculosViewController */,
 				AF628CF120D3407500198E6A /* VehiculosCell */,
 				AF628CDF20CC1D1900198E6A /* AppDelegate.swift */,
-				AF628CE120CC1D1900198E6A /* ViewController.swift */,
 				AF628CE320CC1D1900198E6A /* Main.storyboard */,
 				AF628CE620CC1D1900198E6A /* Assets.xcassets */,
 				AF628CE820CC1D1900198E6A /* LaunchScreen.storyboard */,
@@ -172,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF628CF820D3432100198E6A /* KybosViewController.swift in Sources */,
-				AF628CE220CC1D1900198E6A /* ViewController.swift in Sources */,
 				AF628CFA20D3437600198E6A /* FastoCollectionViewCell.swift in Sources */,
 				AF628CF420D342CD00198E6A /* FastoViewController.swift in Sources */,
 				AF628CE020CC1D1900198E6A /* AppDelegate.swift in Sources */,

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="17F77" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O6W-oJ-6Ar">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17E202" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O6W-oJ-6Ar">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1026,7 +1026,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="im4-oa-c5W">
-                                <rect key="frame" x="28" y="72" width="358" height="0.0"/>
+                                <rect key="frame" x="28" y="72" width="358" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1042,40 +1042,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHf-ns-zp4">
-                                <rect key="frame" x="0.0" y="80" width="414" height="225"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fasto1" translatesAutoresizingMaskIntoConstraints="NO" id="bBb-Bh-0cV">
-                                        <rect key="frame" x="8" y="21" width="151" height="182"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="151" id="RJP-Yt-fWQ"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fasto2" translatesAutoresizingMaskIntoConstraints="NO" id="7SL-4r-CdE">
-                                        <rect key="frame" x="167" y="21" width="151" height="182"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="151" id="6xG-vK-aoA"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fasto3" translatesAutoresizingMaskIntoConstraints="NO" id="OJl-fu-6cN">
-                                        <rect key="frame" x="326" y="21" width="151" height="182"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="151" id="pVq-IW-uh9"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="bBb-Bh-0cV" firstAttribute="leading" secondItem="QHf-ns-zp4" secondAttribute="leadingMargin" id="0Ht-Ht-yeW"/>
-                                    <constraint firstAttribute="bottom" secondItem="bBb-Bh-0cV" secondAttribute="bottom" constant="22" id="8bi-fl-0Wj"/>
-                                    <constraint firstItem="bBb-Bh-0cV" firstAttribute="top" secondItem="QHf-ns-zp4" secondAttribute="top" constant="21" id="AwR-eM-NEP"/>
-                                    <constraint firstItem="7SL-4r-CdE" firstAttribute="top" secondItem="bBb-Bh-0cV" secondAttribute="top" id="F2G-Ka-W5c"/>
-                                    <constraint firstItem="7SL-4r-CdE" firstAttribute="top" secondItem="OJl-fu-6cN" secondAttribute="top" id="Ggf-Xx-GrN"/>
-                                    <constraint firstAttribute="trailing" secondItem="bBb-Bh-0cV" secondAttribute="trailing" constant="255" id="Mch-eO-NMD"/>
-                                    <constraint firstItem="OJl-fu-6cN" firstAttribute="leading" secondItem="7SL-4r-CdE" secondAttribute="trailing" constant="8" symbolic="YES" id="OVO-Tm-2eu"/>
-                                    <constraint firstItem="7SL-4r-CdE" firstAttribute="leading" secondItem="bBb-Bh-0cV" secondAttribute="trailing" constant="8" symbolic="YES" id="PcD-jA-ATN"/>
-                                    <constraint firstItem="bBb-Bh-0cV" firstAttribute="centerY" secondItem="QHf-ns-zp4" secondAttribute="centerY" id="cYU-82-wxK"/>
-                                    <constraint firstItem="7SL-4r-CdE" firstAttribute="bottom" secondItem="OJl-fu-6cN" secondAttribute="bottom" id="j3z-xu-fuV"/>
-                                    <constraint firstItem="7SL-4r-CdE" firstAttribute="bottom" secondItem="bBb-Bh-0cV" secondAttribute="bottom" id="uy6-Xu-fDc"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="116" width="414" height="189"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1129,19 +1096,17 @@
                     </view>
                     <connections>
                         <outlet property="descriptionFasto" destination="Ytt-CG-ses" id="llu-T2-n9h"/>
+                        <outlet property="imagesFasto" destination="QHf-ns-zp4" id="p8L-Qs-vsJ"/>
                         <outlet property="titleFasto" destination="im4-oa-c5W" id="pmk-BC-5Xm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGR-sS-9nM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-174.40000000000001" y="-717.84107946026995"/>
+            <point key="canvasLocation" x="-142.40000000000001" y="-779.0104947526238"/>
         </scene>
     </scenes>
     <resources>
         <image name="fasto" width="150" height="150"/>
-        <image name="fasto1" width="1000" height="571"/>
-        <image name="fasto2" width="1000" height="667"/>
-        <image name="fasto3" width="1000" height="571"/>
         <image name="kybos" width="150" height="150"/>
         <image name="montana" width="150" height="150"/>
     </resources>

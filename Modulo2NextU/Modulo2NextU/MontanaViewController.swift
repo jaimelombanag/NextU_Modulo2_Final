@@ -8,22 +8,35 @@
 
 import UIKit
 
-class MontanaViewController: UIViewController,  UICollectionViewDelegate, UICollectionViewDataSource {
+class MontanaViewController: UIViewController {
     
     
     
     @IBOutlet weak var titleMontana: UILabel!
-    var imageArray = [UIImage(named: "montana1"), UIImage(named: "montana2"), UIImage(named: "montana3"), UIImage(named: "montana4")]
     @IBOutlet weak var descriptionMontana: UITextView!
+    @IBOutlet weak var imagesMontana: UIScrollView!
     
-    
+    var imageArray2 = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         titleMontana.text = "Montana"
-        // Do any additional setup after loading the view.
+        
+        imageArray2 = [UIImage(named: "montana1")!, UIImage(named: "montana2")!, UIImage(named: "montana3")!, UIImage(named: "montana4")!]
+        
+        let imageWidth:CGFloat = 200
+        let imageHeight:CGFloat = 200
+        
+        for i in 0..<imageArray2.count {
+            let imageView = UIImageView()
+            imageView.image = imageArray2[i]
+            imageView.contentMode = .scaleAspectFit
+            let xPosition = self.view.frame.width * CGFloat(i)
+            imageView.frame = CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight)
+            imagesMontana.contentSize.width = imagesMontana.frame.width * CGFloat(i + 1)
+            imagesMontana.addSubview(imageView)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,18 +45,6 @@ class MontanaViewController: UIViewController,  UICollectionViewDelegate, UIColl
     }
     
     
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageArray.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MontanaCollectionViewCell", for: indexPath) as! MontanaCollectionViewCell
-        
-        cell.imgMontana.image = imageArray[indexPath.row]
-        
-        return cell
-    }
     
     
     

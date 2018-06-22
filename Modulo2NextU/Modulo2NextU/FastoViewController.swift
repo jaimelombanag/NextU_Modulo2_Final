@@ -18,6 +18,9 @@ class FastoViewController: UIViewController,  UICollectionViewDelegate, UICollec
     @IBOutlet weak var imagesFasto: UIScrollView!
     
     
+    
+    
+    var imageArray2 = [UIImage]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,39 +29,61 @@ class FastoViewController: UIViewController,  UICollectionViewDelegate, UICollec
         titleFasto.text = "Fasto"
         
         
-        
-        let imagenesFasto = ["fasto1", "fasto2", "fasto3", "fasto4"]
-        
-        let imageWidth:CGFloat = 150
-        let imageHeight:CGFloat = 150
-        var yPosition:CGFloat = 0
-        var ScrollViewContentSize:CGFloat = 150
+        imageArray2 = [#imageLiteral(resourceName: "kybos1"), #imageLiteral(resourceName: "montana2"), #imageLiteral(resourceName: "montana1"), #imageLiteral(resourceName: "kybos3")]
+        let imageWidth:CGFloat = 200
+        let imageHeight:CGFloat = 200
         
         
-        
-        
-        
-        
-        for index in 0 ..< imagenesFasto.count {
+        for i in 0..<imageArray2.count {
+            let imageView = UIImageView()
+            imageView.image = imageArray2[i]
+            imageView.contentMode = .scaleAspectFit
             
-            let imageFasto:UIImage = UIImage(named: imagenesFasto[index])!
-            let imageFastiView:UIImageView = UIImageView()
-            imageFastiView.image = imageFasto
+            let xPosition = self.view.frame.width * CGFloat(i)
+            //imageView.frame = CGRect(x: xPosition, y: 0, width: self.imagesFasto.frame.width, height: self.imagesFasto.frame.height)
+            imageView.frame = CGRect(x: xPosition, y: 0, width: imageWidth, height: imageHeight)
             
-            imageFastiView.frame.size.width = imageWidth
-            imageFastiView.frame.size.height = imageHeight
-            imageFastiView.frame.origin.x = yPosition
-            imageFastiView.frame.origin.y = 10
+            imagesFasto.contentSize.width = imagesFasto.frame.width * CGFloat(i + 1)
             
-            imagesFasto.addSubview(imageFastiView)
+            imagesFasto.addSubview(imageView)
             
-            yPosition += imageHeight
-            ScrollViewContentSize += imageHeight
-
-            imagesFasto.contentSize = CGSize(width: imageWidth, height: ScrollViewContentSize)
+            
             
         }
         
+        
+        
+        
+        
+        
+//        let imagenesFasto = ["fasto1", "fasto2", "fasto3", "fasto4"]
+//        
+//        let imageWidth:CGFloat = 150
+//        let imageHeight:CGFloat = 150
+//        var yPosition:CGFloat = 0
+//        var ScrollViewContentSize:CGFloat = 150
+//        
+//        
+//        for index in 0 ..< imagenesFasto.count {
+//            
+//            let imageFasto:UIImage = UIImage(named: imagenesFasto[index])!
+//            let imageFastiView:UIImageView = UIImageView()
+//            imageFastiView.image = imageFasto
+//            
+//            imageFastiView.frame.size.width = imageWidth
+//            imageFastiView.frame.size.height = imageHeight
+//            imageFastiView.frame.origin.x = yPosition
+//            imageFastiView.frame.origin.y = 10
+//            
+//            imagesFasto.addSubview(imageFastiView)
+//            
+//            yPosition += imageHeight
+//            ScrollViewContentSize += imageHeight
+//
+//            imagesFasto.contentSize = CGSize(width: imageWidth, height: ScrollViewContentSize)
+//            
+//        }
+//        
         
         
         
